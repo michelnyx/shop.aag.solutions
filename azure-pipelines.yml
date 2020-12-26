@@ -11,7 +11,7 @@ steps:
   persistCredentials: true
 - task: CmdLine@2
   inputs:
-    script: 'curl https://shopw.aag.solutions/wp-content/uploads/site/site.zip --output $(Build.ArtifactStagingDirectory)/wp2static-processed-site.zip'
+    script: 'curl https://shopw.aag.solutions/wp-content/uploads/site/shop.aag.solutions/site.zip --output $(Build.ArtifactStagingDirectory)/wp2static-processed-site.zip'
     workingDirectory: '$(Build.ArtifactStagingDirectory)'
 - task: CmdLine@2
   inputs:
